@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Macias | QA Tester Portfolio</title>
+  <meta name="description" content="Portafolio profesional de Manuel Macias, QA Tester especializado en APIs, pagos, WHMCS, e-commerce y documentación técnica." />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#inicio" class="logo">MM<span>QA</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#workflow">Workflow QA</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">QA Tester · Technical QA · APIs · Pagos · WHMCS</p>
+          <h1>Construyo confianza en productos digitales críticos.</h1>
+          <p class="hero-description">
+            Soy QA Tester especializado en validación funcional, pruebas API, flujos de pago,
+            e-commerce, WHMCS, documentación técnica y trazabilidad end-to-end.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn secondary" href="assets/cv-manuel-macias.pdf" target="_blank" rel="noopener">
+              Descargar CV
+            </a>
+          </div>
+
+          <div class="hero-tags">
+            <span>Postman</span>
+            <span>SQL</span>
+            <span>Jira</span>
+            <span>Zephyr Scale</span>
+            <span>Git</span>
+            <span>DevTools</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="status-dot"></div>
+          <h2>Enfoque QA</h2>
+          <p>
+            Pruebas orientadas a riesgo, evidencia reproducible, validación backend/frontend
+            y documentación clara para releases confiables.
+          </p>
+
+          <div class="metric-list">
+            <div>
+              <strong>API</strong>
+              <span>Validación de endpoints, auth y respuestas</span>
+            </div>
+            <div>
+              <strong>Pagos</strong>
+              <span>Tarjetas, gateways, cargos recurrentes</span>
+            </div>
+            <div>
+              <strong>Datos</strong>
+              <span>SQL, reportes y conciliación de información</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Proyectos relevantes</h2>
+          <p>
+            Casos seleccionados con foco en QA técnico, negocio crítico,
+            automatización de validaciones manuales y documentación trazable.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA de pagos / WHMCS</span>
+              <span class="project-number">01</span>
+            </div>
+            <h3>Consolidación de flujo de pagos y cargos recurrentes</h3>
+            <p>
+              Validación de una rama unificada para pagos, tarjetas guardadas y cargos recurrentes,
+              asegurando compatibilidad entre carrito, área de clientes y gateways.
+            </p>
+            <ul>
+              <li>Pruebas de regresión sobre checkout y client area.</li>
+              <li>Validación de primera compra con tarjeta y asociación recurrente.</li>
+              <li>Revisión de logs, SQL y trazabilidad en Jira/Zephyr.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>WHMCS</span><span>PHP</span><span>MySQL</span><span>Gateways</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA API / Seguridad</span>
+              <span class="project-number">02</span>
+            </div>
+            <h3>Endpoint de backups para VPS</h3>
+            <p>
+              Validación de endpoint backend para consultar backups desde Proxmox,
+              garantizando autenticación, autorización por usuario y protección de credenciales.
+            </p>
+            <ul>
+              <li>Pruebas con fetch desde Chrome DevTools y curl.</li>
+              <li>Casos negativos sin sesión o con servicio no autorizado.</li>
+              <li>Verificación de respuesta mínima de éxito/error.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>API</span><span>Proxmox</span><span>DevTools</span><span>curl</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA Analytics / E-commerce</span>
+              <span class="project-number">03</span>
+            </div>
+            <h3>Tracking de compra con dataLayer</h3>
+            <p>
+              Validación de estructura del evento purchase para Google Tag Manager,
+              asegurando jerarquía correcta de propiedades, método de pago y UTMs.
+            </p>
+            <ul>
+              <li>Validación de payment_type y affiliation.</li>
+              <li>Revisión de items, transaction_id, coupon y value.</li>
+              <li>Inspección directa de window.dataLayer.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>GTM</span><span>JavaScript</span><span>dataLayer</span><span>DevTools</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA de negocio / Dominios</span>
+              <span class="project-number">04</span>
+            </div>
+            <h3>Renovación y transferencia de dominios .LAT</h3>
+            <p>
+              Diseño y validación de pruebas para bloquear renovación directa de dominios .LAT
+              bajo Central NIC y redirigir el flujo hacia transferencia automática.
+            </p>
+            <ul>
+              <li>Bloqueo frontend con respaldo backend fail-safe.</li>
+              <li>Validación por TLD, registrar y fecha de expiración.</li>
+              <li>Pruebas de cron, email y pop-up informativo.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>WHMCS</span><span>SQL</span><span>LogicBoxes</span><span>Cron</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA Web / UX</span>
+              <span class="project-number">05</span>
+            </div>
+            <h3>Landing y checkout de producto n8n</h3>
+            <p>
+              Validación de consistencia entre landing y checkout para precios promocionales,
+              precios tachados, periodicidad mensual/anual y disclaimers comerciales.
+            </p>
+            <ul>
+              <li>Comparación visual entre landing y carrito.</li>
+              <li>Validación de badges, precios y disclaimers.</li>
+              <li>Pruebas responsive y de cambio de periodicidad.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Laravel Blade</span><span>Checkout</span><span>Responsive</span><span>UX</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">QA de datos / Reporting</span>
+              <span class="project-number">06</span>
+            </div>
+            <h3>Reportes WHMCS y normalización de ingresos</h3>
+            <p>
+              Validación de reportes comerciales con normalización de ingresos en MXN,
+              agrupaciones por fecha, filtros por periodo y conciliación contra widgets nativos.
+            </p>
+            <ul>
+              <li>Validación SQL de ingresos, unidades y moneda.</li>
+              <li>Pruebas por gateway, producto y rango de fechas.</li>
+              <li>Comparación con reportes nativos de WHMCS.</li>
+            </ul>
+            <div class="tech-stack">
+              <span>MySQL</span><span>WHMCS</span><span>Reports</span><span>PHP</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2>Habilidades técnicas</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Testing</h3>
+            <ul>
+              <li>Pruebas funcionales</li>
+              <li>Smoke testing</li>
+              <li>Regression testing</li>
+              <li>End-to-end testing</li>
+              <li>API testing</li>
+              <li>Cross-browser testing</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Herramientas</h3>
+            <ul>
+              <li>Jira</li>
+              <li>Zephyr Scale</li>
+              <li>Confluence</li>
+              <li>Postman</li>
+              <li>Chrome DevTools</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Áreas técnicas</h3>
+            <ul>
+              <li>WHMCS</li>
+              <li>APIs REST</li>
+              <li>Pagos y gateways</li>
+              <li>E-commerce</li>
+              <li>SQL reporting</li>
+              <li>Logs y debugging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Proceso</p>
+          <h2>Workflow QA</h2>
+          <p>
+            Mi proceso combina entendimiento de negocio, análisis técnico,
+            ejecución controlada y evidencia reproducible.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>01</span>
+            <h3>Análisis de requerimiento</h3>
+            <p>Revisión de criterios de aceptación, alcance, riesgos y dependencias.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>02</span>
+            <h3>Diseño de pruebas</h3>
+            <p>Creación de test plan, casos funcionales, negativos, regresión y datos de prueba.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>03</span>
+            <h3>Ejecución técnica</h3>
+            <p>Validación con UI, API, SQL, logs, DevTools, Postman y evidencia timestamped.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>04</span>
+            <h3>Trazabilidad</h3>
+            <p>Registro de resultados, defectos reproducibles, impacto y seguimiento en Jira/Zephyr.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>QA con visión técnica y foco en negocio</h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            Soy QA Tester con experiencia en validación de plataformas web, APIs,
+            flujos de pago, e-commerce, WHMCS y procesos críticos de negocio.
+          </p>
+          <p>
+            Me especializo en diseñar pruebas claras, reproducibles y orientadas a riesgo,
+            documentando evidencia técnica mediante SQL, logs, respuestas API, capturas
+            y trazabilidad en Jira/Zephyr.
+          </p>
+          <p>
+            Mi objetivo es reducir defectos críticos, mejorar la calidad de los releases
+            y asegurar que los cambios lleguen a producción con confianza.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-card">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Hablamos de calidad de software?</h2>
+        <p>
+          Puedes contactarme para oportunidades como QA Tester, Technical QA,
+          QA Automation Trainee o roles enfocados en APIs, datos y e-commerce.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:tu-correo@example.com">Enviar email</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/tu-linkedin/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <p class="contact-note">
+          Edita los enlaces de email, LinkedIn y GitHub en el archivo <code>index.html</code>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Manuel Macias. QA Tester Portfolio.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
