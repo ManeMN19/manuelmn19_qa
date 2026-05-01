@@ -127,6 +127,25 @@ ul {
   font-size: 0.78rem;
 }
 
+.tag-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+}
+
+.tag-with-icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
 h1,
 h2,
 h3 {
